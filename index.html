@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferraz & Lima Advocacia | Atendimento jurídico no Rio de Janeiro</title>
+<meta name="description" content="Escritório de advocacia no Rio de Janeiro. Atendimento próximo e estratégico em Direito Civil, Família, Trabalhista, Consumidor e Previdenciário. Fale pelo WhatsApp.">
+<meta property="og:title" content="Ferraz & Lima Advocacia">
+<meta property="og:description" content="Atendimento jurídico próximo e estratégico no Rio de Janeiro.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2312233a'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='28' fill='%23c9a96e' text-anchor='middle'%3EF%26L%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!--
+  ===== RASTREAMENTO (preencher com os IDs do cliente) =====
+  Os scripts abaixo só são carregados DEPOIS que o visitante aceita os cookies (ver função loadTracking no fim da página).
+  - Google Tag Manager: GTM-XXXXXXX
+  - Google Analytics 4: G-XXXXXXXXXX
+  - Meta Pixel: 000000000000000
+  Eventos de conversão já disparados: clique no WhatsApp ("whatsapp_click" / Lead) e envio do formulário ("form_submit" / Contact).
+-->
+
+<style>
+:root{
+  --navy:#12233a; --navy-2:#1b3150; --ink:#1d2430; --muted:#5d6675;
+  --sand:#f6f2ea; --line:#e4dccd; --gold:#b8955a; --gold-2:#c9a96e;
+  --white:#fff; --green:#25d366;
+  --serif:"Cormorant Garamond", Georgia, serif; --sans:"Inter", system-ui, sans-serif;
+  --r:14px; --max:1140px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--white);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;color:var(--navy)}
+h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:14px}
+.eyebrow{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:12px;display:block}
+.lead{color:var(--muted);font-size:1.05rem;max-width:620px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;font-size:.95rem;transition:.2s;border:1.5px solid transparent;cursor:pointer;font-family:var(--sans)}
+.btn-gold{background:var(--gold);color:var(--white)}
+.btn-gold:hover{background:#a5834b}
+.btn-line{border-color:rgba(255,255,255,.4);color:var(--white)}
+.btn-line:hover{border-color:var(--white)}
+.btn svg{width:18px;height:18px}
+
+/* demo bar */
+.demo{background:#0b1626;color:#c8ced8;font-size:.8rem;text-align:center;padding:8px 16px}
+.demo a{color:var(--gold-2);text-decoration:underline}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:42px;height:42px;border-radius:10px;background:var(--navy);color:var(--gold-2);display:grid;place-items:center;font-family:var(--serif);font-size:1.15rem;font-weight:700}
+.logo-name{font-family:var(--serif);font-size:1.35rem;font-weight:700;color:var(--navy);line-height:1}
+.logo-name small{display:block;font-family:var(--sans);font-size:.62rem;letter-spacing:.24em;color:var(--muted);font-weight:500;margin-top:4px}
+.menu{display:flex;gap:28px;align-items:center;font-size:.92rem;color:var(--muted)}
+.menu a:hover{color:var(--navy)}
+.menu .btn{padding:11px 20px;font-size:.88rem}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2px;background:var(--navy);margin:5px 0;transition:.2s}
+
+/* hero */
+.hero{background:var(--navy);color:var(--white);padding:110px 0 120px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-120px;width:620px;height:620px;border-radius:50%;border:1px solid rgba(201,169,110,.25)}
+.hero::before{content:"";position:absolute;right:-60px;top:0;width:420px;height:420px;border-radius:50%;border:1px solid rgba(201,169,110,.15)}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero h1{color:var(--white);font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:22px}
+.hero h1 em{color:var(--gold-2);font-style:italic}
+.hero p{color:#c9d1dd;font-size:1.12rem;max-width:560px;margin-bottom:34px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-card{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:30px}
+.hero-card h3{color:var(--white);font-size:1.5rem;margin-bottom:18px}
+.hero-card li{list-style:none;display:flex;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.07);color:#d5dbe4;font-size:.95rem}
+.hero-card li:last-child{border:0}
+.hero-card svg{width:20px;height:20px;flex:none;color:var(--gold-2);margin-top:3px}
+
+/* areas */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:50px;flex-wrap:wrap}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:.25s;background:var(--white)}
+.card:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(18,35,58,.35)}
+.icon{width:52px;height:52px;border-radius:12px;background:var(--sand);display:grid;place-items:center;margin-bottom:20px;color:var(--gold)}
+.icon svg{width:26px;height:26px}
+.card h3{font-size:1.45rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+
+/* sobre */
+.sobre{background:var(--sand)}
+.sobre-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px;align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:20px;background:linear-gradient(160deg,var(--navy-2),var(--navy));position:relative;overflow:hidden;display:grid;place-items:center}
+.portrait .mono{font-family:var(--serif);font-size:6rem;color:var(--gold-2);opacity:.9}
+.portrait .tag{position:absolute;left:20px;bottom:20px;right:20px;background:rgba(255,255,255,.95);border-radius:12px;padding:14px 18px}
+.portrait .tag b{display:block;font-family:var(--serif);font-size:1.25rem;color:var(--navy)}
+.portrait .tag span{font-size:.82rem;color:var(--muted)}
+.portrait .note{position:absolute;top:16px;left:16px;font-size:.7rem;color:#9fb0c6;letter-spacing:.1em;text-transform:uppercase}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:30px}
+.fact{background:var(--white);border-radius:12px;padding:18px 20px;border:1px solid var(--line)}
+.fact b{display:block;color:var(--navy);font-size:.95rem}
+.fact span{color:var(--muted);font-size:.88rem}
+
+/* passos */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{position:relative;padding-top:58px}
+.step::before{counter-increment:s;content:"0" counter(s);position:absolute;top:0;left:0;font-family:var(--serif);font-size:2.6rem;color:var(--gold);font-weight:600}
+.step::after{content:"";position:absolute;top:26px;left:64px;right:-11px;height:1px;background:var(--line)}
+.step:last-child::after{display:none}
+.step h3{font-size:1.4rem;margin-bottom:8px}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* diferenciais */
+.dif{background:var(--navy);color:var(--white)}
+.dif h2{color:var(--white)}
+.dif .lead{color:#c3ccd9}
+.dif-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px}
+.dif-item{border-top:1px solid rgba(201,169,110,.5);padding-top:20px}
+.dif-item h3{color:var(--white);font-size:1.35rem;margin-bottom:6px}
+.dif-item p{color:#b9c3d1;font-size:.93rem}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-weight:600;color:var(--navy);font-size:1.02rem}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--gold);transition:.2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:12px;font-size:.96rem}
+
+/* contato */
+.contato{background:var(--sand)}
+.contato-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.info li{list-style:none;display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.info svg{width:22px;height:22px;color:var(--gold);flex:none;margin-top:2px}
+.info b{display:block;color:var(--navy);font-size:.95rem}
+.info span{color:var(--muted);font-size:.92rem}
+form{background:var(--white);border-radius:20px;padding:34px;border:1px solid var(--line);box-shadow:0 24px 50px -36px rgba(18,35,58,.4)}
+form h3{font-size:1.7rem;margin-bottom:6px}
+form > p{color:var(--muted);font-size:.92rem;margin-bottom:22px}
+.field{margin-bottom:16px}
+label{display:block;font-size:.85rem;font-weight:600;color:var(--navy);margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:.95rem;background:#fdfcf9;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold-2);border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:.84rem;color:var(--muted);margin:6px 0 20px}
+.check input{width:auto;margin-top:4px}
+.check a{color:var(--navy);text-decoration:underline}
+form .btn{width:100%;justify-content:center}
+.ok{display:none;margin-top:14px;font-size:.9rem;color:#1d6b40}
+
+/* footer */
+footer{background:#0b1626;color:#9aa6b6;padding:60px 0 30px;font-size:.9rem}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer h4{color:var(--white);font-family:var(--serif);font-size:1.25rem;margin-bottom:12px;font-weight:600}
+footer a:hover{color:var(--white)}
+footer li{list-style:none;padding:4px 0}
+.legal{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:.82rem}
+
+/* whatsapp + cookies */
+.wa{position:fixed;right:20px;bottom:20px;z-index:50;width:60px;height:60px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 10px 30px -8px rgba(0,0,0,.45);transition:.2s}
+.wa:hover{transform:scale(1.06)}
+.wa svg{width:32px;height:32px;color:#fff}
+.cookie{position:fixed;left:20px;bottom:20px;z-index:60;max-width:420px;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 20px 50px -20px rgba(0,0,0,.35);font-size:.88rem;color:var(--muted);display:none}
+.cookie b{color:var(--navy);display:block;margin-bottom:6px;font-size:.95rem}
+.cookie a{color:var(--navy);text-decoration:underline}
+.cookie .acts{display:flex;gap:10px;margin-top:14px}
+.cookie button{flex:1;padding:10px;border-radius:999px;font:inherit;font-weight:600;font-size:.85rem;cursor:pointer}
+.c-yes{background:var(--navy);color:#fff;border:0}
+.c-no{background:none;border:1px solid var(--line);color:var(--navy)}
+
+/* responsive */
+@media (max-width:960px){
+  .hero-grid,.sobre-grid,.faq-grid,.contato-grid{grid-template-columns:1fr;gap:40px}
+  .cards{grid-template-columns:1fr 1fr}
+  .steps,.dif-grid{grid-template-columns:1fr 1fr;gap:34px}
+  .step::after{display:none}
+  .foot{grid-template-columns:1fr 1fr}
+  .portrait{max-width:420px}
+}
+@media (max-width:760px){
+  section{padding:72px 0}
+  .menu{position:fixed;inset:74px 0 auto 0;background:var(--white);flex-direction:column;gap:0;padding:10px 20px 24px;border-bottom:1px solid var(--line);display:none}
+  .menu.open{display:flex}
+  .menu a{padding:12px 0;width:100%;border-bottom:1px solid var(--line)}
+  .menu .btn{margin-top:14px;justify-content:center;border:0}
+  .burger{display:block}
+  .hero{padding:80px 0 90px}
+  .cards,.steps,.dif-grid,.facts,.row,.foot{grid-template-columns:1fr}
+  form{padding:24px}
+  .cookie{left:12px;right:12px;bottom:90px;max-width:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo">Modelo de demonstração · nomes e dados fictícios · criado por Matheus Paulino · <a href="#" data-wa="Olá, Matheus! Vi o modelo de site para advocacia e quero um para o meu escritório.">quero um site assim</a></div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#topo" class="logo" aria-label="Ferraz & Lima Advocacia">
+      <span class="logo-mark">F&amp;L</span>
+      <span class="logo-name">Ferraz &amp; Lima<small>ADVOCACIA</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#areas">Áreas de atuação</a>
+      <a href="#sobre">O escritório</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#duvidas">Dúvidas</a>
+      <a href="#contato" class="btn btn-gold">Agendar atendimento</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="topo">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Advocacia no Rio de Janeiro</span>
+      <h1>Seu caso tratado com <em>atenção</em> e estratégia.</h1>
+      <p>Atendimento jurídico próximo, com explicações claras em cada etapa. Analisamos sua situação e mostramos os caminhos possíveis antes de qualquer decisão.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-gold" data-wa="Olá! Gostaria de agendar um atendimento.">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+        <a href="#areas" class="btn btn-line">Conhecer as áreas</a>
+      </div>
+    </div>
+    <aside class="hero-card">
+      <h3>Como podemos ajudar</h3>
+      <ul>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Primeira análise do caso sem compromisso</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Atendimento presencial ou online</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Acompanhamento do processo com retorno frequente</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Linguagem simples, sem “juridiquês”</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <span class="eyebrow">Áreas de atuação</span>
+        <h2>Onde atuamos</h2>
+        <p class="lead">Atuação consultiva e contenciosa nas áreas que mais afetam o dia a dia de pessoas e pequenas empresas.</p>
+      </div>
+      <a href="#contato" class="btn btn-gold">Falar sobre meu caso</a>
+    </div>
+    <div class="cards">
+      <article class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3v18M5 7h14M7 7l-3 7a3 3 0 0 0 6 0L7 7zm10 0-3 7a3 3 0 0 0 6 0l-3-7zM8 21h8"/></svg></div><h3>Direito Civil</h3><p>Contratos, cobranças, indenizações, responsabilidade civil e questões de imóveis.</p></article>
+      <article class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="8" cy="7" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20a6 6 0 0 1 12 0M13 20a4.5 4.5 0 0 1 9 0"/></svg></div><h3>Família e Sucessões</h3><p>Divórcio, guarda, pensão alimentícia, inventário e planejamento sucessório.</p></article>
+      <article class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></svg></div><h3>Trabalhista</h3><p>Verbas rescisórias, horas extras, assédio, acordos e orientação a empregadores.</p></article>
+      <article class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.5 12h11L21 7H6"/></svg></div><h3>Consumidor</h3><p>Cobranças indevidas, negativação, problemas com bancos, planos de saúde e compras.</p></article>
+      <article class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg></div><h3>Previdenciário</h3><p>Aposentadorias, benefícios por incapacidade, BPC/LOAS e revisões no INSS.</p></article>
+      <article class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div><h3>Empresarial</h3><p>Abertura de empresa, contratos sociais, revisão de contratos e consultoria preventiva.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <div class="wrap sobre-grid">
+    <div class="portrait" role="img" aria-label="Espaço para foto profissional do advogado">
+      <span class="note">Espaço para foto</span>
+      <span class="mono">F&amp;L</span>
+      <div class="tag"><b>Dr. Ricardo Ferraz</b><span>Advogado · OAB/RJ 000.000</span></div>
+    </div>
+    <div>
+      <span class="eyebrow">O escritório</span>
+      <h2>Advocacia feita com proximidade</h2>
+      <p class="lead">O Ferraz &amp; Lima nasceu para oferecer um atendimento jurídico em que o cliente entende o que está acontecendo com o próprio caso. Cada demanda é analisada de forma individual, com uma estratégia pensada para a realidade de quem nos procura.</p>
+      <p class="lead" style="margin-top:14px">Atendemos presencialmente no Rio de Janeiro e de forma online em todo o Brasil.</p>
+      <div class="facts">
+        <div class="fact"><b>Formação</b><span>Graduação em Direito e pós-graduação na área de atuação</span></div>
+        <div class="fact"><b>Registro</b><span>OAB/RJ 000.000</span></div>
+        <div class="fact"><b>Atendimento</b><span>Presencial e online</span></div>
+        <div class="fact"><b>Horário</b><span>Seg. a sex., das 9h às 18h</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona">
+  <div class="wrap">
+    <span class="eyebrow">Como funciona</span>
+    <h2>Do primeiro contato ao acompanhamento</h2>
+    <p class="lead" style="margin-bottom:54px">Um processo simples e transparente, para você saber o que esperar em cada fase.</p>
+    <div class="steps">
+      <div class="step"><h3>Contato</h3><p>Você nos chama pelo WhatsApp ou pelo formulário e conta brevemente a sua situação.</p></div>
+      <div class="step"><h3>Análise do caso</h3><p>Avaliamos os documentos e os fatos para entender os seus direitos e os riscos envolvidos.</p></div>
+      <div class="step"><h3>Estratégia</h3><p>Apresentamos os caminhos possíveis, prazos e custos, para você decidir com segurança.</p></div>
+      <div class="step"><h3>Acompanhamento</h3><p>Seguimos com o caso e mantemos você informado sobre cada movimentação.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dif">
+  <div class="wrap">
+    <span class="eyebrow">Por que nos escolher</span>
+    <h2>Compromisso em cada detalhe</h2>
+    <p class="lead">Mais do que resolver processos, cuidamos de pessoas que confiaram a nós um momento importante.</p>
+    <div class="dif-grid">
+      <div class="dif-item"><h3>Atendimento direto</h3><p>Você fala com o advogado responsável pelo seu caso.</p></div>
+      <div class="dif-item"><h3>Clareza</h3><p>Explicamos cada etapa em linguagem simples.</p></div>
+      <div class="dif-item"><h3>Agilidade</h3><p>Retorno rápido às suas mensagens e dúvidas.</p></div>
+      <div class="dif-item"><h3>Ética e sigilo</h3><p>Todas as informações tratadas com total confidencialidade.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap faq-grid">
+    <div>
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Perguntas que recebemos sempre</h2>
+      <p class="lead">Não encontrou sua dúvida? Fale com a gente pelo WhatsApp.</p>
+    </div>
+    <div>
+      <details open><summary>Como é feito o primeiro atendimento?</summary><p>Você pode nos chamar pelo WhatsApp ou preencher o formulário. Retornamos para entender sua situação e agendar uma conversa, presencial ou online.</p></details>
+      <details><summary>Vocês atendem online?</summary><p>Sim. Atendemos clientes de todo o Brasil por videochamada, com assinatura digital de documentos.</p></details>
+      <details><summary>Quais documentos devo separar?</summary><p>Depende do caso. Em geral: documento de identidade, comprovante de residência e tudo o que estiver relacionado ao problema (contratos, mensagens, comprovantes). Orientamos no primeiro contato.</p></details>
+      <details><summary>Quanto custa uma consulta?</summary><p>Os honorários seguem a tabela da OAB/RJ e variam conforme a complexidade do caso. Tudo é combinado com transparência antes do início do trabalho.</p></details>
+      <details><summary>Quanto tempo demora um processo?</summary><p>Cada caso tem seu tempo, que depende do tipo de ação e do andamento da Justiça. Na análise inicial, explicamos a estimativa e mantemos você informado durante todo o processo.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contato">
+  <div class="wrap contato-grid">
+    <div>
+      <span class="eyebrow">Contato</span>
+      <h2>Vamos conversar sobre o seu caso</h2>
+      <p class="lead" style="margin-bottom:26px">Envie sua mensagem. O retorno é feito em horário comercial.</p>
+      <ul class="info">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Endereço</b><span>Av. Exemplo, 1000, sala 000 · Centro, Rio de Janeiro/RJ</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Horário</b><span>Segunda a sexta, das 9h às 18h</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><b>E-mail</b><span>contato@ferrazlima.adv.br</span></div></li>
+      </ul>
+    </div>
+    <form id="form" novalidate>
+      <h3>Fale com o escritório</h3>
+      <p>Preencha os campos e continue a conversa pelo WhatsApp.</p>
+      <div class="row">
+        <div class="field"><label for="nome">Nome</label><input id="nome" required autocomplete="name"></div>
+        <div class="field"><label for="tel">Telefone</label><input id="tel" type="tel" required autocomplete="tel" placeholder="(21) 90000-0000"></div>
+      </div>
+      <div class="field"><label for="area">Assunto</label>
+        <select id="area"><option>Direito Civil</option><option>Família e Sucessões</option><option>Trabalhista</option><option>Consumidor</option><option>Previdenciário</option><option>Empresarial</option><option>Outro</option></select>
+      </div>
+      <div class="field"><label for="msg">Conte brevemente o seu caso</label><textarea id="msg" required></textarea></div>
+      <label class="check"><input type="checkbox" id="lgpd" required> Concordo com o uso dos meus dados para retorno do contato, conforme a <a href="politica-de-privacidade.html">Política de Privacidade</a>.</label>
+      <button class="btn btn-gold" type="submit">Enviar mensagem</button>
+      <p class="ok" id="ok"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4>Ferraz &amp; Lima Advocacia</h4>
+        <p>Atendimento jurídico próximo e estratégico no Rio de Janeiro e online em todo o Brasil.</p>
+        <p style="margin-top:10px">Dr. Ricardo Ferraz · OAB/RJ 000.000</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul><li><a href="#areas">Áreas de atuação</a></li><li><a href="#sobre">O escritório</a></li><li><a href="#como-funciona">Como funciona</a></li><li><a href="#duvidas">Dúvidas</a></li></ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul><li>Av. Exemplo, 1000 · Centro, RJ</li><li>contato@ferrazlima.adv.br</li><li><a href="#" data-wa="Olá! Gostaria de agendar um atendimento.">WhatsApp</a></li></ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© <span id="ano"></span> Ferraz &amp; Lima Advocacia. Todos os direitos reservados.</span>
+      <span><a href="politica-de-privacidade.html">Política de Privacidade</a> · <a href="#" id="cookie-prefs">Preferências de cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="wa" data-wa="Olá! Gostaria de agendar um atendimento." aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>
+</a>
+
+<div class="cookie" id="cookie" role="dialog" aria-label="Aviso de cookies">
+  <b>Sua privacidade importa</b>
+  Usamos cookies para medir o acesso ao site e melhorar sua experiência. Você pode aceitar ou recusar. Saiba mais na <a href="politica-de-privacidade.html">Política de Privacidade</a>.
+  <div class="acts"><button class="c-no" id="c-no">Recusar</button><button class="c-yes" id="c-yes">Aceitar</button></div>
+</div>
+
+<script>
+/* ===== CONFIGURAÇÃO (trocar pelos dados do cliente) ===== */
+const WHATSAPP = "5521974968560";   // número com DDI + DDD, só dígitos
+const GTM_ID = "";                  // ex.: "GTM-XXXXXXX"
+const GA4_ID = "";                  // ex.: "G-XXXXXXXXXX"
+const PIXEL_ID = "";                // ex.: "000000000000000"
+
+document.getElementById("ano").textContent = new Date().getFullYear();
+
+/* menu mobile */
+const menu = document.getElementById("menu");
+document.getElementById("burger").addEventListener("click", () => menu.classList.toggle("open"));
+menu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => menu.classList.remove("open")));
+
+/* eventos de conversão */
+function track(name, metaEvent){
+  try{ window.dataLayer && window.dataLayer.push({event:name}); }catch(e){}
+  try{ window.gtag && window.gtag("event", name); }catch(e){}
+  try{ window.fbq && window.fbq("track", metaEvent); }catch(e){}
+}
+function openWA(text){
+  window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(text), "_blank", "noopener");
+}
+document.querySelectorAll("[data-wa]").forEach(el => el.addEventListener("click", e => {
+  e.preventDefault(); track("whatsapp_click", "Lead"); openWA(el.dataset.wa);
+}));
+
+/* formulário -> WhatsApp */
+document.getElementById("form").addEventListener("submit", e => {
+  e.preventDefault();
+  const f = e.target, ok = document.getElementById("ok");
+  if(!f.checkValidity()){ ok.style.display="block"; ok.style.color="#a3352b"; ok.textContent="Preencha todos os campos e aceite a Política de Privacidade."; return; }
+  const txt = `Olá! Meu nome é ${f.nome.value}.\nTelefone: ${f.tel.value}\nAssunto: ${f.area.value}\n\n${f.msg.value}`;
+  track("form_submit", "Contact");
+  ok.style.display="block"; ok.style.color="#1d6b40"; ok.textContent="Abrindo o WhatsApp para enviar sua mensagem…";
+  openWA(txt);
+});
+
+/* cookies (LGPD): rastreamento só carrega com consentimento */
+const box = document.getElementById("cookie");
+function getC(){ try{ return localStorage.getItem("cookie_consent"); }catch(e){ return null; } }
+function setC(v){ try{ localStorage.setItem("cookie_consent", v); }catch(e){} }
+function loadTracking(){
+  if(GTM_ID){
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',GTM_ID);
+  }
+  if(GA4_ID){
+    const s=document.createElement("script"); s.async=true; s.src="https://www.googletagmanager.com/gtag/js?id="+GA4_ID; document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[]; window.gtag=function(){dataLayer.push(arguments);}; gtag("js",new Date()); gtag("config",GA4_ID);
+  }
+  if(PIXEL_ID){
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq("init", PIXEL_ID); fbq("track", "PageView");
+  }
+}
+const consent = getC();
+if(consent === "yes") loadTracking();
+if(!consent) box.style.display = "block";
+document.getElementById("c-yes").onclick = () => { setC("yes"); box.style.display="none"; loadTracking(); };
+document.getElementById("c-no").onclick = () => { setC("no"); box.style.display="none"; };
+document.getElementById("cookie-prefs").onclick = e => { e.preventDefault(); box.style.display="block"; };
+</script>
+</body>
+</html>
